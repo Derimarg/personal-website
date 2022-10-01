@@ -11,6 +11,10 @@ const Header = () => {
 
   const menuRef = useRef(null);
 
+  /**
+   * If the user scrolls down more than 80px, add the class `header__shrink` to the header. If the user
+   * scrolls back up to less than 80px, remove the class `header__shrink` from the header
+   */
   const shrinkHeader = () => {
     if (document.body.scrollTo > 80 || document.documentElement.scrollTo > 80) {
       headerRef.current.classList.add(`${classes.header__shrink}`);
@@ -19,12 +23,17 @@ const Header = () => {
     }
   };
 
+  /* Adding an event listener to the window object. The event listener is listening for the scroll
+  event. When the scroll event is triggered, the shrinkHeader function is called. */
   useEffect(() => {
     window.addEventListener('scroll', shrinkHeader);
 
     return () => window.removeEventListener('scroll', shrinkHeader);
   }, []);
 
+  /**
+   * When the menu button is clicked, toggle the class of the menu to active.
+   */
   const toggleMenu = () =>
     menuRef.current.classList.toggle(`${classes.menu__active}`);
 
