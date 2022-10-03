@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --primary-color: rgba(2, 132, 199, 1);
+  --primary-color: rgba(17, 17, 17, 1);
 }
 
 html,
@@ -24,7 +24,7 @@ a {
 }
 
 p {
-  color: #808dad;
+  color: rgba(0, 0, 0, 0.6);
   line-height: 30px;
 }
 h1,
@@ -98,7 +98,7 @@ footer {
 
 ::-webkit-scrollbar {
   width: 10px;
-  background: #808dad;
+  background: #000;
 }
 
 ::-webkit-scrollbar-thumb {

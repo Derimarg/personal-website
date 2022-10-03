@@ -16,7 +16,7 @@
 }
 
 .logo h1 span {
-  color: rgba(2, 132, 199, 1);
+  color: rgba(161, 161, 170, 4);
 }
 
 .nav__menu {
@@ -26,7 +26,7 @@
 }
 
 .nav__menu a {
-  color: #808dad;
+  color: #000;
   font-weight: 500;
   font-size: 1rem;
   text-decoration: none;
@@ -35,20 +35,20 @@
 }
 
 .nav__menu a:hover {
-  color: rgba(2, 132, 199, 1);
+  color: rgba(161, 161, 170, 0.3);
 }
 
 .nav__menu a:first-child {
-  color: rgba(2, 132, 199, 1);
+  color: rgba(161, 161, 170, 4);
 }
 
 .nav__right p {
-  color: rgba(2, 132, 199, 1);
+  color: rgba(161, 161, 170, 0.3);
   margin-left: 20px;
   position: relative;
 }
 .nav__right i {
-  color: #808dad;
+  color: #000;
 }
 
 .nav__right p::before {
@@ -58,8 +58,8 @@
   left: -20px;
   width: 1px;
   height: 14px;
-  background: #808dad;
-  color: #808dad;
+  background: #000;
+  color: #000;
 }
 
 .header__shrink {

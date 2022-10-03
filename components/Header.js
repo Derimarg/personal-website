@@ -42,9 +42,7 @@ const Header = () => {
       <Container>
         <div className={classes.nav__wrapper}>
           <div className={classes.logo}>
-            <h1>
-              <span>P</span>ortfolio
-            </h1>
+            <h1>Portfolio</h1>
           </div>
 
           <div
