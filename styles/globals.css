@@ -1,7 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --primary-color: rgba(17, 17, 17, 1);
+  --base-padding: 20px;
+  --border-color-regular: rgba(0, 0, 0, 0.1);
+  --text-color-extra-light: rgba(0, 0, 0, 0.2);
+  --text-color-light: rgba(0, 0, 0, 0.4);
+  --text-color-medium: rgba(0, 0, 0, 0.6);
+  --text-color-dark: rgba(17, 17, 17, 1);
+  --text-color-regular: rgba(4, 4, 4, 1);
+  --spacing-xs: 20px;
+  --spacing-s: 40px;
+  --spacing-m: 40px;
+  --spacing-l: 60px;
+  --spacing-xl: 60px;
 }
 
 html,
@@ -45,7 +56,8 @@ section {
 }
 
 .subtitle {
-  color: var(--primary-color) !important;
+  color: var(--text-color-dark) !important;
+  color: var() !important;
   font-weight: 400;
   margin-left: 40px;
   position: relative;
@@ -58,8 +70,8 @@ section {
   left: -40px;
   width: 30px;
   height: 1px;
-  background: var(--primary-color);
-  color: var(--primary-color);
+  background: var(--text-color-dark);
+  color: var(--text-color-dark);
 }
 
 footer {
@@ -71,13 +83,13 @@ footer {
 .primary__btn {
   background: transparent !important;
   padding: 7px 25px !important;
-  border: 1px solid var(--primary-color) !important;
+  border: 1px solid var(--text-color-dark) !important;
   border-radius: 5px;
 }
 
 .primary__btn a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--text-color-dark);
   background: transparent !important;
 }
 
@@ -89,11 +101,11 @@ footer {
 }
 
 .secondary__btn a {
-  color: var(--primary-color) !important;
+  color: var(--text-color-dark) !important;
 }
 .primary__btn a:hover,
 .secondary__btn a:hover {
-  color: var(--primary-color);
+  color: var(--text-color-dark);
 }
 
 ::-webkit-scrollbar {
