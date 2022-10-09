@@ -1,3 +1,16 @@
+header.masthead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+header.masthead h1,
+header.masthead .h1 {
+  font-size: 2.25rem;
+}
+
 .hero {
   padding-top: 60px !important;
 }
@@ -10,9 +23,28 @@
   padding-top: 50px;
 }
 
+.team_member {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.team_member .img {
+  width: 14rem;
+  height: 14rem;
+  border: 0.5rem solid rgba(0, 0, 0, 0.1);
+}
+.team_member h4,
+.team_member .h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
 .hero__img {
   position: relative;
   z-index: 9;
+  width: 14rem;
+  height: 14rem;
+  border: 0.5rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 50% !important;
 }
 
 .hero__img img {
@@ -75,8 +107,27 @@
   background: #808dad70;
   border-radius: 5px;
 }
-
+@media (min-width: 1200px) {
+  header.masthead h1,
+  header.masthead .h1 {
+    font-size: 3.5rem;
+  }
+}
 @media only screen and (max-width: 992px) {
+  header.masthead {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+  }
+  header.masthead p {
+    font-size: 1.15rem;
+  }
+  header.masthead h1,
+  header.masthead .h1 {
+    font-size: 3rem;
+  }
+
   .hero__content h2 {
     font-size: 1.5rem !important;
   }
