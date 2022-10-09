@@ -8,6 +8,7 @@ import {
 
 import classes from '../styles/Services.module.css';
 import Subtitle from './Subtitle';
+import Section from './Section';
 
 const ServicesItem = ({ title, icon }) => {
   return (
@@ -21,7 +22,7 @@ const ServicesItem = ({ title, icon }) => {
 const Services = () => {
   return (
     <section id='services'>
-      <Container>
+      <Section top={80} bottom={80}>
         <Row>
           <Col lang='6' md='6'>
             <div className={classes.services__container}>
@@ -54,7 +55,7 @@ const Services = () => {
             </p>
           </Col>
         </Row>
-      </Container>
+      </Section>
     </section>
   );
 };

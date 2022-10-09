@@ -3,6 +3,8 @@ import React from 'react';
 import { Col, Container, Row } from 'reactstrap';
 
 import classes from '../styles/Contact.module.css';
+import Section from './Section';
+
 import Subtitle from './Subtitle';
 
 const Contact = () => {
@@ -11,17 +13,18 @@ const Contact = () => {
   };
 
   return (
-    <section id='contact' className={classes.contact}>
-      <Container>
+    <section id='contact'>
+      <Section top={80} bottom={80}>
         <Row>
           <Col lg='6' md='6'>
             <Subtitle subtitle='Contact me' />
             <h3 className='mt-4 mb-4'>Contact with me</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-              beatae ratione iusto cum. Doloremque suscipit eius provident error
-              labore est reprehenderit, exercitationem corrupti earum deleniti!
+              Want to get in touch or have any further questions? Let me know
+              what is on your ming by sending me an email or scheduling a video
+              call.
             </p>
+            <p>Thanks for visiting my website! - Derimar.</p>
           </Col>
           <Col lg='6' mg='6'>
             <form className={classes.form} onSubmit={submitHandler}>
@@ -53,15 +56,15 @@ const Contact = () => {
                   required
                 />
               </div>
-              <p>By submitting this form, I acknowledge receipt.</p>
-              <p>Fields marked with an asterisk (*) are required.</p>
+              <p className='mb-0'>By submitting this form, I acknowledge receipt.</p>
+              <p className='mt-0'>Fields marked with an asterisk (*) are required.</p>
               <button className='primary__btn' type='submit'>
                 Send
               </button>
             </form>
           </Col>
         </Row>
-      </Container>
+      </Section>
     </section>
   );
 };

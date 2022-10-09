@@ -16,19 +16,14 @@ const Hero = () => {
           <Col lg='6' md='6'>
             <div className={classes.hero__content}>
               <Subtitle subtitle='Hello' />
-              <h2 className='mt-3 mb-3'>I am Derimar Gray</h2>
-              <h5 className='mb-4'>Full Stack Developer</h5>
+              <h3 className='mt-4 mb-3'>I&apos;m Derimar Gray</h3>
               <p>
                 I spend most of time coding. I love sharing knowledge and learn,
                 my goal is to help other developers!
               </p>
               <div className='mt-5'>
                 <button className='primary__btn'>
-                  <Link href='#'>Hire me</Link>
-                </button>
-
-                <button className='secondary__btn'>
-                  <Link href='#'>Download CV</Link>
+                  <Link href='#'>Download Resume</Link>
                 </button>
               </div>
             </div>

@@ -1,10 +1,12 @@
 import Link from 'next/link';
 import React, { useEffect, useRef } from 'react';
-
+import Image from 'next/image';
 import { Container } from 'reactstrap';
+import { IoMenuOutline } from 'react-icons/io5';
+
+import logo from '../public/images/Gray_logo.png';
 import { nav__links } from '../constants/constantsDB';
 import classes from '../styles/Header.module.css';
-import { IoCallOutline, IoMenuOutline } from 'react-icons/io5';
 
 const Header = () => {
   const headerRef = useRef(null);
@@ -42,7 +44,7 @@ const Header = () => {
       <Container>
         <div className={classes.nav__wrapper}>
           <div className={classes.logo}>
-            <h1>Portfolio</h1>
+            <Image alt='logo image' src={logo} width='100' height='100' className={classes.logo__image}/>
           </div>
 
           <div
@@ -58,12 +60,6 @@ const Header = () => {
                   </Link>
                 );
               })}
-
-              <div className={classes.nav__right}>
-                <p className=' d-flex align-items-center gap-2 mb-0'>
-                  <IoCallOutline />
-                </p>
-              </div>
             </div>
           </div>
           <span className={classes.mobile__menu}>
