@@ -7,6 +7,7 @@ import profileImg from '../public/images/profile.png';
 
 import classes from '../styles/Hero.module.css';
 import Subtitle from './Subtitle';
+import { urls } from '../constants/constantsDB';
 
 const Hero = () => {
   return (
@@ -23,7 +24,7 @@ const Hero = () => {
               </p>
               <div className='mt-5'>
                 <button className='primary__btn'>
-                  <Link href='#'>Download Resume</Link>
+                  <Link href={urls.resume}>Download Resume</Link>
                 </button>
               </div>
             </div>
